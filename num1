@@ -1,0 +1,15 @@
+maxa = - 10**10
+for a in range (100):
+    flag = 0
+    for x in range (100):
+        for y in range (100):
+            if ((x <= 9) <= (x ** 2 <= a))  and ((y**2 <= a) <= (y <=9)) == False:
+                flag = 1
+                break
+        if flag == 1:
+            break
+    if flag == 0:
+        maxa = max(maxa,a)
+    else:
+        break
+print(maxa)
